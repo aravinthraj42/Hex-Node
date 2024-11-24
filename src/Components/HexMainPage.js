@@ -1,12 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-// import PlatformsSupported from './HexPlatformSupported';
-// import Cards from './HexCards'
-// import HexNodeFeature from './HexFeature';
-// import RunningLogos from './HexSupportedLogo'
-// import Footer from './HexFooter';
-// import SignupComponent from './HexSignup'
-// import SliderComponent from './HexSlider'
 
 
 function HexMainPage() {
@@ -45,7 +38,7 @@ function HexMainPage() {
       </Content>
       <ImageContainer>
         <Image
-          src="/hexnode-kiosk.webp" // Replace with your image URL
+          src="/hexnode-kiosk.webp"  // Picks Images From Local
           alt="Device kiosks"
         />
       </ImageContainer>
