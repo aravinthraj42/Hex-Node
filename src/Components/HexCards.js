@@ -68,7 +68,7 @@ const CardContainer = styled.div`
     margin: 0 -25px;
   }
   @media (min-width: 1280px) {
-    margin: 0 -45px;
+    margin: 0 auto;
   }
 `;
 
@@ -102,6 +102,7 @@ const CardContent = styled.div`
 const ImageContainer = styled.div`
   display: flex;
   margin-bottom: 15px;
+  
 `;
 
 const CardImage = styled.img`

@@ -155,8 +155,8 @@ const MenuButton = styled.button`
   display: none;
   @media (max-width: 768px) {
     display: block;
-    color: white;
-    background-color: rgb(2, 10, 25);
+    color: #fff;
+    background-color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;

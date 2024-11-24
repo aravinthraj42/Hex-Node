@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+/* App.css */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+/* App.css */
+* {
+  box-sizing: border-box; /* Inherit box-sizing for all elements */
+}
+
+/* Adjust padding or margins for smaller screens if needed */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+/* App.css */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}

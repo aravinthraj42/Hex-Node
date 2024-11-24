@@ -26,7 +26,7 @@ const platforms = [
   {
     alt: 'Amazon Fire',
     src: 'https://static.hexnode.com/v2/assets/img/ads-pages/platform/amazon-fire.png',
-  },HexPlatformSupported
+  }
 ];
 
 function HexPlatformSupported() {
