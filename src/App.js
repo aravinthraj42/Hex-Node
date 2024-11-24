@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import  HexHeader  from './Components/HexHeader'
+import HexMainPage from './Components/HexMainPage';
+import HexCards from './Components/HexCards'
+import HexSlider from './Components/HexSlider';
+import HexFeature from './Components/HexFeature';
+import HexSupportedLogo from './Components/HexSupportedLogo'
+import HexPlatformSupported from './Components/HexPlatformSupported';
+import HexSignup from './Components/HexSignup';
+import HexFooter from './Components/HexFooter';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HexHeader />
+    <main>
+     <HexMainPage/>
+      <HexCards />
+      <HexSlider />
+      <HexFeature />
+      <HexSupportedLogo />
+      <HexPlatformSupported />
+      <HexSignup />
+   
+    </main>
+    <footer>
+    <HexFooter />
+      </footer>
     </div>
   );
 }
