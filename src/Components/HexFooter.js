@@ -25,6 +25,7 @@ const footerBottomBar = {
     },
   ],
   copy_right: "Copyright © 2024 Mitsogo Inc. All Rights Reserved.",
+  owner: "https://www.linkedin.com/in/aravinth-raj-developer"
 };
 
 const HexFooter = () => {
@@ -39,6 +40,8 @@ const HexFooter = () => {
               </PolicyItem>
             ))}
           </PolicyList>
+          <Owner href={footerBottomBar.owner} target="_blank" rel="noopener noreferrer">
+            Created By Aravinth Raj J</Owner>
           <CopyRight>{footerBottomBar.copy_right}</CopyRight>
         </FooterContent>
       </FooterWrapper>
@@ -74,6 +77,22 @@ const FooterContent = styled.div`
     flex-direction: row;
   }
 `;
+
+const Owner = styled.a`
+text-align: center;
+font-size: 0.9rem;
+font-weight: 600;
+color: Grey;
+text-decoration: none;
+&:hover{
+  color: black;
+}
+@media (max-width: 600px) {
+    padding: 2em;
+    margin-top: 3em;
+}
+`;
+
 
 const PolicyList = styled.ul`
   display: flex;
