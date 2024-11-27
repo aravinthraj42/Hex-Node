@@ -1,70 +1,173 @@
-# Getting Started with Create React App
+Created By : Aravinth Raj J 
+* [LinkedIn](https://www.linkedin.com/in/aravinth-raj-developer)!
+* [View-My-Portfolio](https://aravinthraj42.github.io/aravinth-profile-portfolio/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Getting Started with Hex Node Clone Application
 
-## Available Scripts
+Application was Hosted on - https://hex-node-clone.netlify.app/
+
+Orignal Source of the Application: https://www.hexnode.com/solutions/hexnode-kiosk/
+
+Source Code: https://github.com/aravinthraj42/Hex-Node
+
+# Pre-Requisites
+
+* Node.js is required -- https://nodejs.org/en
+
+You’ll need to have Node >= 14.0.0 and npm >= 5.6 on your machine
+
+
+# Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+Use Main Branch Only
+ `npm install`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `npm install styled-components` -- If required.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `npm start`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Runs the application
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+.
 
-### `npm run eject`
+### `npm test`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+--->Note: Test Case are not Implemented for the Application.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Documenation and Learning Curve
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Application start from `App.js` folder
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The HexNode application is built using React and styled-components. It includes a responsive navigation bar that adapts to different screen sizes, a toggle menu for small screens, and a tab-based slider to display various kiosk modes.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Strengths (Pros)
 
-### Code Splitting
+ 1.Modular Design:
+Components are encapsulate with styled Components - East to debug since it was Small Application
+Styled-components encapsulate styles, avoiding CSS conflicts.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+ 2.Responsive Layout:
+Adapts to various screen sizes seamlessly using media queries.
 
-### Analyzing the Bundle Size
+ 3.Dynamic User Experience:
+Scroll-based visual feedback (e.g., background color change).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+ 4.Modern Tech Stack:
+Built with React, utilizing hooks and modern best practices.
+Styled-components simplify styling and theming.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Limitations (Cons)
 
-### Deployment
+ 1.Accessibility (A11y):
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Good Application should work for Person with Disablity 
+Needs improvements for keyboard navigation and ARIA attributes for better accessibility.
+We should ensure Implementation with Accessibility
 
-### `npm run build` fails to minify
+ 2.Performance Optimization:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Since it was Clone Application, I was use for Internal Styling which is not Recommanded for Production Ready Application
+
+Use of multiple styled-components may impact performance in larger applications.
+Should Consider extracting reusable styles to reduce duplication.
+
+ 3. Limited Prop Utilization:
+
+Components currently rely on internal state rather than leveraging reusable props, reducing flexibility for future enhancements.
+
+
+ 4. Limited Responsive Layout:
+
+Not Complete Mobile Friendly or Tab Friendly Responsive Application
+There might be minor issue on small device.
+Due to Some Time Constrait I could not able Cover all Device.
+
+
+ 5. Testing Gaps:
+Unit and integration tests are not implemented, leaving edge cases uncovered.
+
+
+
+# Challenges Faced
+
+
+ 
+ 1.Horizontal Scrolling Issue
+
+ Challenge:
+ Unwanted horizontal scrolling occurred due to overflow caused by misaligned elements.
+ Solution:
+ Ensured all elements were styled with appropriate box-sizing, margin, and padding. Added overflow-x: hidden globally to avoid unintended scroll behavior.
+
+
+ 2. Mobile Menu Visibility
+
+Challenge: 
+The MenuToggle button was not visible on smaller screens.
+Solution:
+Adjusted @media queries and ensured proper positioning for smaller viewports.
+
+
+ 3. Dynamic Background Styling
+
+Challenge: 
+The background color transition on scroll was inconsistent across browsers.
+Solution: 
+Fine-tuned useEffect logic to reliably track scrollY changes and applied cross-browser-compatible CSS transitions.
+
+
+4.Button Alignment and Size
+
+Challenge: 
+Try 14 days Trail Buttons rendered too large and aligned too close to the edge of the container.
+Solution: 
+Reduced button padding and adjusted margin to ensure proper alignment.
+
+
+# Learning Curve:
+
+ 1.React Slick
+
+https://react-slick.neostack.com/docs/example/responsive
+
+`npm install slick-carousel --save`
+
+Gothrough React-Slick Docs and Implemented Logic and 
+Responsives at for Logo Slider  `HexSupportedLogo` Components
+
+
+2. React swiper
+
+https://swiperjs.com/react#styles
+
+`  npm i swiper`
+
+Go through Swiper Docs and Add Logic and Styles for  `HexSlider` Components
+
+3. Debugging CSS:
+
+Acquired skills to identify and fix CSS bugs causing layout issues
+Learned to use browser dev tools more effectively to debug complex styling problems.
+
+4.Styled-Components Mastery:
+
+Learned to leverage styled-components for responsive design and scoped styling.
+Gained insights into structuring reusable and modular CSS-in-JS solutions.
+
+
+# Conclusion
+
+Learning and Implementing HexNode application helps to learn more pratical in responsive design and modern front-end practices.
+
+Thanks for opportunity to Learning and Implement Application which helps to gain Pratical Experience.
+
