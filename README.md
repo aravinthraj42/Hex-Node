@@ -82,7 +82,7 @@ The HexNode application is built using React and styled-components. It includes 
 
 - Since it was Clone Application, I was use for Internal Styling which is not Recommanded for Production Ready Application
 
-\*Use of multiple styled-components may impact performance in larger applications.
+- Use of multiple styled-components may impact performance in larger applications.
 Should Consider extracting reusable styles to reduce duplication.
 
 3. Limited Prop Utilization:
